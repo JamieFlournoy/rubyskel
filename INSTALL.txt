@@ -1,0 +1,19 @@
+Installation instructions
+
+Mac prerequisites:
+==================
+1) Xcode
+2) autoconf ('brew install automake' or see http://stackoverflow.com/questions/9575989/install-autoreconf-on-osx-lion for tips)
+3) Ruby (tested with 1.9.3)
+
+To easily install Ruby 1.9.3 on Mac OS X Lion, use RVM:
+  curl -L https://get.rvm.io | bash -s stable
+  rvm install 1.9.3
+
+To be tidy, set up an RVM gemset for rubyskel:
+  rvm use 1.9.3
+  rvm gemset create rubyskel
+  rvm use 1.9.3@rubyskel
+
+Then install the gems that rubyskel needs:
+  bundler install
