@@ -72,8 +72,8 @@ class TestRubyskel < Test::Unit::TestCase
     end
     context '.build_command' do
       context 'with example' do
-        should 'return a command line that echos hello world' do
-          expected = 'echo "hello, world!"'
+        should 'return a command line that echoes Hello world' do
+          expected = 'echo "Hello, world!"'
           assert_equal expected, Rubyskel.build_command({}, ['example'])
         end
       end
